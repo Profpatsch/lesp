@@ -1,0 +1,10 @@
+=====
+String
+=====
+
+Each item is a string!
+There are no quoted strings¡?
+It’s just so.
+
+---
+(expr (string) (string) (string) (string) (string) (string) (string) (string) (string) (string) (string) (string) (string))
