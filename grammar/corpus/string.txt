@@ -6,5 +6,7 @@ Each item is a string!
 There are no quoted strings¡?
 It’s just so.
 
+However\ you\ can\ escape\ spaces\ if\ you\ absoutely\ must.
+
 ---
-(expr (string) (string) (string) (string) (string) (string) (string) (string) (string) (string) (string) (string) (string))
+(expr (string) (string) (string) (string) (string) (string) (string) (string) (string) (string) (string) (string) (string) (string))

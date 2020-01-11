@@ -23,14 +23,20 @@ module.exports = grammar({
 
         string: $ => token(
             repeat1(choice(
+                // escaping the escape character \
                 seq('\\', '\\'),
+                // escaping all parens
                 seq('\\', '('),
                 seq('\\', ')'),
                 seq('\\', '['),
                 seq('\\', ']'),
                 seq('\\', '{'),
+                // escaping = (for attrlists)
+                // TODO: this should probably be only necessary inside {}
                 seq('\\', '='),
                 seq('\\', '}'),
+                // spaces can be escaped if absolutely necessary (e.g. for dict attributes with spaces)
+                seq('\\', ' '),
                 /[^\\()\[\]{=}\s]/,
             ))
         )

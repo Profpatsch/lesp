@@ -2,9 +2,11 @@
 Dictionaries
 ====
 
-{ key=value this_lists=keys_and_values }
+{ key=value this_lists=keys_and_values
+  spaces\ can=be\ escaped }
 
 ---
 (expr (dict
+ (dict_elem (dict_key) (dict_val))
  (dict_elem (dict_key) (dict_val))
  (dict_elem (dict_key) (dict_val))))
